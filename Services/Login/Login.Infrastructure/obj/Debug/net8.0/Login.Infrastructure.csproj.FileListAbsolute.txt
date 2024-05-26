@@ -1,0 +1,16 @@
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\bin\Debug\net8.0\Login.Infrastructure.deps.json
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\bin\Debug\net8.0\Login.Infrastructure.dll
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\bin\Debug\net8.0\Login.Infrastructure.pdb
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\bin\Debug\net8.0\Login.Core.dll
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\bin\Debug\net8.0\Login.Core.pdb
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.AssemblyInfo.cs
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.sourcelink.json
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.In.50C764E2.Up2Date
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.dll
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\refint\Login.Infrastructure.dll
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\Login.Infrastructure.pdb
+C:\Users\vyomm\Documents\GitHub Projects\Split-Budget-App\Services\Login\Login.Infrastructure\obj\Debug\net8.0\ref\Login.Infrastructure.dll
