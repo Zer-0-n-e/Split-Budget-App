@@ -364,3 +364,4 @@ __pycache__/
 /Services/Login/Login.Api/obj/Debug/net8.0/Login.Api.pdb
 /Services/Login/Login.Api/obj/Debug/net8.0/Login.Api.sourcelink.json
 /Services/Login/Login.Infrastructure/obj/project.nuget.cache
+/Services/Login/Login.Api/bin/Debug/net8.0/appsettings.json
