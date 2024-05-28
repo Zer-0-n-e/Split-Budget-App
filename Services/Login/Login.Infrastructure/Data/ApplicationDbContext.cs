@@ -11,7 +11,7 @@ namespace Login.Infrastructure.Data
     public class ApplicationDbContext : DbContext
     {
         public  DbSet<User> users { get; set; }
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 
