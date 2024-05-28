@@ -1,4 +1,4 @@
-﻿using Login.Core;
+﻿using Login.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

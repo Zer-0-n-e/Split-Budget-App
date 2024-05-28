@@ -1,4 +1,4 @@
-﻿using Login.Core;
+﻿using Login.Core.Entities;
 using Login.Core.IRepositories;
 using Login.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
