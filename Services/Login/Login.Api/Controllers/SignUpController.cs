@@ -1,11 +1,13 @@
 ﻿using Login.Core.Entities;
 using Login.Core.IRepositories;
 using Login.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Login.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class SignUpController : ControllerBase

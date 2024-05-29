@@ -3,11 +3,13 @@ using Login.Core.Entities;
 using Login.Core.IRepositories;
 using Login.Core.ServiceContracts;
 using Login.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Login.Api.Controllers
 {
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : Controller

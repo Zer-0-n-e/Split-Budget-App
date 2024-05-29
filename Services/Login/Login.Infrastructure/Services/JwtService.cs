@@ -2,6 +2,7 @@
 using Login.Core.Entities;
 using Login.Core.ServiceContracts;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -16,21 +17,23 @@ namespace Login.Infrastructure.Services
     public class JwtService : IJwtService
     {
         private readonly IConfiguration _configuration;
+        private readonly ILogger<IJwtService> _logger;
 
-        public JwtService(IConfiguration configutaion)
+        public JwtService(IConfiguration configutaion, ILogger<IJwtService> logger)
         {
             _configuration = configutaion;
+            _logger = logger;
         }
         public AuthenticationResponse CreateJwtToken(User user)
         {
             try
             {
-                DateTime? expiration = DateTime.UtcNow.AddMinutes(Convert.ToDouble(_configuration["Jwt:EXPIRATION_MINUTES"]));
+                DateTime? expiration = DateTime.Now.AddDays(Convert.ToDouble(_configuration["Jwt:EXPIRATION_MINUTES"]));
 
-                Claim[] claims = new Claim[] {
+                Claim[] authclaims = new Claim[] {
             new Claim(JwtRegisteredClaimNames.Sub, user.UserId.ToString()),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
+            //new Claim(JwtRegisteredClaimNames.Iat, DateTime.Now),
             new Claim(ClaimTypes.NameIdentifier, user.UserName),
             new Claim(ClaimTypes.Name, user.UserName)
             };
@@ -42,7 +45,7 @@ namespace Login.Infrastructure.Services
                 JwtSecurityToken tokenGenerator = new JwtSecurityToken(
                     _configuration["Jwt:Issuer"],
                     _configuration["Jwt:Audience"],
-                    claims,
+                    claims: authclaims,
                     expires: expiration,
                     signingCredentials: signingCredentials
                     );
@@ -54,8 +57,7 @@ namespace Login.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                String exm = ex.Message;
-                int x = 0;
+                _logger.LogError(ex.Message);
             }
             return new AuthenticationResponse();
         }
