@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextInput, View } from 'react-native';
-import styles from './styles';
+import styles from '../screens/login/styles';
 
 const PasswordInput = ({ value, onChangeText, placeholder }) => {
   return (
